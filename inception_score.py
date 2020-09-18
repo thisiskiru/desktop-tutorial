@@ -11,7 +11,7 @@ import os
 import cv2
 import numpy
 
-path = "D:/flower_result/Sun_to_Day/CC_/A2B/"
+path = "D:/flower_result/Sun_to_Day/CC+TD/B2A/"
 folder = os.listdir(path)
 batch  = len(folder)
 shuffle(folder)
