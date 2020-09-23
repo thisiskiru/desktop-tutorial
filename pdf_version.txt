@@ -1,0 +1,83 @@
+﻿ACKNOWLEDGMENT ; 5
+1. Introduction; 16
+	1.1. Backgrounds; 19
+		1.1.1. Generative Adversarial Networks; 19
+	1.2. Motivation; 21
+	1.3. Statement of the Problem; 21
+	1.4. The Objective of the Thesis; 22
+		1.4.1. General Objective; 22
+		1.4.2. Specific Objective; 22
+	1.5. Research Methodology; 23
+		1.5.1. Data Collection; 23
+		1.5.2. Literature Review; 23
+		1.5.3. Evaluation; 23
+		1.5.4. Implementation Tools; 23
+	1.6. Scope and Limitation; 24
+		1.6.1. Scope; 24
+		1.6.2. Limitations; 24
+	1.7. Organization of the thesis; 24
+2. Literature review; 26
+	2.1. Introduction; 26
+	2.2. Inside GAN; 26
+		2.2.1. GAN training; 28
+		2.2.2. Conditional GAN; 29
+	2.3. Variational Autoencoders; 30
+	2.4. GAN based Image-to-Image Translation using unpaired training data; 30
+	2.5. Video to video translation; 33
+	2.6. Problems in Translation Networks; 33
+	2.7. Temporal information; 34
+		2.7.1. Optical flow; 35
+		2.7.2. Pose estimation; 36
+		2.7.3. 3D convolutional tensor; 37
+		2.7.4. Recurrent temporal; 37
+	2.8. Recent works on Spatio-temporal information; 38
+	2.9. Recent work summary; 39
+3. Materials and Methods; 43
+	3.1. Overview; 43
+	3.2. Dataset; 43
+	3.3. Development tools; 46
+	3.4. Design tools; 46
+	3.5. Prototype development framework; 47
+		3.5.1. TensorFlow; 47
+		3.5.2. OpenCV; 48
+		3.5.3. MATLAB Deep Network Designer; 48
+	3.6. Baselines; 48
+	3.7. Feature Extraction Algorithm; 49
+	3.8. Evaluation methods; 50
+		3.8.1. Human evaluation study; 50
+		3.8.2. Inception score; 50
+4. Proposed work; 51
+	4.1. Overview; 51
+	iv 4.2. Model Architecture; 51
+	4.3. Model learning functions; 52
+		4.3.1. Proposed Network Learning Function; 52
+	4.4. Temporal warping; 55
+	4.5. Temporal aware Discriminator; 55
+	4.6. Training Pseudocode; 55
+5. Implementation of the Proposed work; 57
+	5.1. Overview; 57
+	5.2. Working Environment; 57
+	5.3. Environmental Setup; 57
+	5.4. Cycle-GAN specification; 58
+	5.5. Implement Cycle-GAN; 59
+	5.6. Temporal Predictor Network Implementation; 60
+	5.7. Feature Preserving Loss Implementation; 61
+	5.8. Temporal aware Discriminator Network Implementation; 61
+	5.9. Temporal information Implementation; 61
+	5.10. Experiment Class; 62
+6. Evaluation, Results, and Discussion; 63
+	6.1. Overview; 63
+	6.2. Video to video Translation; 63
+		6.2.1. Flower to Flower; 63
+		6.2.1. Sunset to Day; 67
+		6.2.2. Face to Face; 70
+7. Conclusion and Future work; 73
+	7.1. Conclusion; 73
+	7.2. Limitation and Future work; 74
+References; 75
+Appendix; 80
+	Appendix A\: Loss function; 80
+	Appendix B\: Residual Blocks\:; 80
+	Appendix C\: Result on Different epochs; 81
+	Appendix D\: Cycle-GAN Training pseudocode\:; 83
+	Appendix E\: Cycle-GAN with Feature Preserving Training pseudocode\:; 84
