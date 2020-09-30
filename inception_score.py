@@ -11,7 +11,7 @@ import os
 import cv2
 import numpy
 
-path = "D:/Adiss/Adiss_RC/samples_testing/A2B/"
+path = "D:/Adiss/Adiss_RC_TI/samples_testing/A2B/"
 folder = os.listdir(path)
 batch  = len(folder)
 shuffle(folder)
@@ -55,7 +55,7 @@ def batch_generator():
     images = []
     for i in range(len(folder)):
         im = cv2.imread(path + folder[i])
-        im = im[:,0:256,:]
+        im = im[:,256:512,:]
         im = cv2.resize(im, (299, 299)) 
         images.append(im)
     return images
